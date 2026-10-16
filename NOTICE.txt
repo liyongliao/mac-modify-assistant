@@ -1,0 +1,13 @@
+MAC修改助手 / MAC Modify Assistant
+
+Wi-Fi hook approach based on the analysis of:
+- MACsposed by David Berdik: https://github.com/DavidBerdik/MACsposed
+- MACsposed-Fork by Samg381: https://github.com/Samg381/MACsposed-Fork
+  Inspected upstream revision: 36db5e2d60a8d7ccfb01284e407ed0edd7d0c77a
+
+This implementation is distributed under GNU AGPL v3.0. See LICENSE.
+The Xposed API 82 is a compile-only dependency provided by the installed
+Xposed-compatible framework at runtime. It is not bundled into the APK.
+Official dependency URL:
+https://api.xposed.info/de/robv/android/xposed/api/82/api-82.jar
+SHA-256: f48c635f1c7469fdec0e00ad2ea0b7a6b2f5b55065784a35b7ca3a84615e8e25

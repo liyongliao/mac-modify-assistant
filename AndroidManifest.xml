@@ -1,0 +1,11 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="cn.macmanual" android:versionCode="3" android:versionName="1.2.0">
+ <uses-sdk android:minSdkVersion="31" android:targetSdkVersion="35"/>
+ <queries><package android:name="com.samg381.macsposedfork"/></queries>
+ <application android:label="MAC修改助手" android:icon="@drawable/icon" android:theme="@style/AppTheme" android:allowBackup="false">
+  <meta-data android:name="xposedmodule" android:value="true"/>
+  <meta-data android:name="xposeddescription" android:value="手动设置 Wi-Fi 和 USB 网卡 MAC；Wi-Fi 系统调用改写，Root 接口修改与回读验证"/>
+  <meta-data android:name="xposedminversion" android:value="82"/>
+  <meta-data android:name="xposedscope" android:resource="@array/xposed_scope"/>
+  <activity android:name=".MainActivity" android:exported="true" android:configChanges="orientation|screenSize|keyboardHidden"><intent-filter><action android:name="android.intent.action.MAIN"/><category android:name="android.intent.category.LAUNCHER"/><category android:name="de.robv.android.xposed.category.MODULE_SETTINGS"/></intent-filter></activity>
+ </application>
+</manifest>
